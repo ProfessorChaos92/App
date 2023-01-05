@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+
+{%block body%}
+<div class="jumbotron text-center">
+    <h1></h1>
+    
+{% if function == 'LowInventory' %}                       
+{% for i in result %}
+              <td><b>{{i}}</b></td>
+            </tr>
+            {% endfor %}    
+{% else%}
+Nah Bruh
+{% endif %}   
+    
+</div>
+{%endblock%}

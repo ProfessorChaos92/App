@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+
+{%block body%}
+<div class="jumbotron text-center">
+    <h1>Update Item Quaintity</h1>
+  
+<form action="/updated" method="POST">
+    Select Item to update:  <SELECT name="Item" style="font-family:verdana">
+        {% for i in list %}
+            <OPTION value={{i}}>{{i}}</OPTION>
+        {% endfor %}
+
+    <input type="submit" value="Submit" class="myButton">
+</form>
+
+</div>
+{%endblock%}
